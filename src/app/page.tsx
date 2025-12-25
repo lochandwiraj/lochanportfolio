@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "@/components/sections/navbar";
 import HeroSection from "@/components/sections/hero";
 import ProjectsList from "@/components/sections/projects-list";
+import { SeekingMarquee } from "@/components/sections/seeking-marquee";
 import NarrativeIntro from "@/components/sections/narrative-intro";
 import CapabilitiesSection from "@/components/sections/capabilities";
 import PhilosophyTech from "@/components/sections/philosophy-tech";
@@ -18,9 +19,10 @@ export default function Home() {
       
       <main>
         <HeroSection />
-          <ProjectsList />
-          <NarrativeIntro />
-          <CapabilitiesSection />
+        <ProjectsList />
+        <SeekingMarquee />
+        <NarrativeIntro />
+        <CapabilitiesSection />
         <PhilosophyTech />
         <ProjectShowcase />
       </main>
