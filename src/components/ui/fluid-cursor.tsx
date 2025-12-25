@@ -49,7 +49,7 @@ export default function FluidCursor({ color = "#000000" }: FluidCursorProps) {
       dy: 0,
       down: false,
       moved: false,
-      color: [0, 0, 0],
+      color: [1, 1, 1], // Use white internally to represent density/ink
     });
 
     // Utility to hex to rgb
@@ -61,6 +61,7 @@ export default function FluidCursor({ color = "#000000" }: FluidCursorProps) {
     };
 
     const fluidColor = hexToRgb(color);
+    pointers[0].color = [1, 1, 1]; // Internal density is always white for alpha calculation
 
     class Program {
       program: WebGLProgram;
@@ -555,14 +556,14 @@ export default function FluidCursor({ color = "#000000" }: FluidCursorProps) {
       gl!.uniform1f(splatProgram.uniforms.aspect, width / height);
       gl!.uniform2f(splatProgram.uniforms.point, x / width, 1 - y / height);
       gl!.uniform3f(splatProgram.uniforms.color, dx, -dy, 1.0);
-      gl!.uniform1f(splatProgram.uniforms.radius, SPLAT_RADIUS / 100);
+      gl!.uniform1f(splatProgram.uniforms.radius, SPLAT_RADIUS / 10.0);
       blit(velocity.write.fbo);
       velocity.swap();
 
       gl!.viewport(0, 0, DYE_RES, DYE_RES);
       splatProgram.use();
       gl!.uniform1i(splatProgram.uniforms.uTarget, density.read.attach(0));
-      gl!.uniform3f(splatProgram.uniforms.color, color[0] * 0.3, color[1] * 0.3, color[2] * 0.3);
+      gl!.uniform3f(splatProgram.uniforms.color, color[0], color[1], color[2]);
       blit(density.write.fbo);
       density.swap();
     }
@@ -577,22 +578,30 @@ export default function FluidCursor({ color = "#000000" }: FluidCursorProps) {
     }
 
     const onMouseMove = (e: MouseEvent) => {
-      pointers[0].moved = pointers[0].down;
+      if (!pointers[0].down) {
+        pointers[0].x = e.clientX;
+        pointers[0].y = e.clientY;
+        pointers[0].down = true;
+      }
+      pointers[0].moved = true;
       pointers[0].dx = (e.clientX - pointers[0].x) * 5.0;
       pointers[0].dy = (e.clientY - pointers[0].y) * 5.0;
       pointers[0].x = e.clientX;
       pointers[0].y = e.clientY;
-      pointers[0].down = true;
     };
 
     const onTouchMove = (e: TouchEvent) => {
       const touch = e.touches[0];
-      pointers[0].moved = pointers[0].down;
+      if (!pointers[0].down) {
+        pointers[0].x = touch.clientX;
+        pointers[0].y = touch.clientY;
+        pointers[0].down = true;
+      }
+      pointers[0].moved = true;
       pointers[0].dx = (touch.clientX - pointers[0].x) * 5.0;
       pointers[0].dy = (touch.clientY - pointers[0].y) * 5.0;
       pointers[0].x = touch.clientX;
       pointers[0].y = touch.clientY;
-      pointers[0].down = true;
     };
 
     window.addEventListener("mousemove", onMouseMove);
