@@ -1,9 +1,11 @@
 import React from 'react';
+import FluidCursor from '@/components/ui/fluid-cursor';
 
 export default function HeroSection() {
   return (
     <>
       <section className="relative w-full min-h-screen bg-[#FFFFFF] text-[#000000] overflow-hidden flex flex-col justify-center px-[4vw]">
+        <FluidCursor color="#000000" />
         <div className="container mx-auto px-0 relative z-10 w-full max-w-full">
           <div className="flex flex-col md:flex-row justify-between items-start pt-[10vh] pb-[10vh]">
             
