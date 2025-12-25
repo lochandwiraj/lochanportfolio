@@ -3,17 +3,27 @@
 import React from 'react';
 
 const projects = [
-  { name: "Subscrybe - Blockchain Payments", year: "2024" },
-  { name: "BB84 - Quantum Network Simulator", year: "2024" },
-  { name: "LIMBO - Emotional Companion", year: "2024" },
-  { name: "AutoCDA - AI Circuit Designer", year: "2025" },
-  { name: "MITHRIL - WhatsApp Commerce", year: "2025" },
-  { name: "ARGUS - Smart City Platform", year: "2025" },
-  { name: "THEMIS - Banking Fraud Prevention", year: "2025" },
-  { name: "MORIA - Quantum ML for Finance", year: "2025" },
+  { name: "Subscrybe - Blockchain Payments", year: "2024", slug: "subscrybe" },
+  { name: "BB84 - Quantum Network Simulator", year: "2024", slug: "bb84" },
+  { name: "LIMBO - Emotional Companion", year: "2024", slug: "limbo" },
+  { name: "AutoCDA - AI Circuit Designer", year: "2025", slug: "autocda" },
+  { name: "MITHRIL - WhatsApp Commerce", year: "2025", slug: "mithril" },
+  { name: "ARGUS - Smart City Platform", year: "2025", slug: "argus" },
+  { name: "THEMIS - Banking Fraud Prevention", year: "2025", slug: "themis" },
+  { name: "MORIA - Quantum ML for Finance", year: "2025", slug: "moria" },
 ];
 
 const ProjectsList: React.FC = () => {
+  const handleProjectClick = (slug: string) => {
+    const projectElement = document.getElementById(`project-${slug}`);
+    if (projectElement) {
+      projectElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section id="projects" className="bg-black py-[20vh] px-[4vw]">
       <div className="container mx-auto max-w-full">
@@ -21,6 +31,7 @@ const ProjectsList: React.FC = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
+              onClick={() => handleProjectClick(project.slug)}
               className="group flex justify-between items-baseline border-b border-[#333333] py-8 hover:border-white hover:bg-white transition-all duration-300 cursor-pointer"
             >
               <div className="flex items-baseline gap-4 group-hover:translate-x-4 transition-transform duration-500">

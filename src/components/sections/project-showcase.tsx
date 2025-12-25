@@ -167,6 +167,7 @@ const ProjectShowcase: React.FC = () => {
       {projects.map((project) => (
         <div 
           key={project.id} 
+          id={`project-${project.id}`}
           className="project-section min-h-[80vh] flex flex-col justify-center border-t border-[#333333] py-24 px-[4vw]"
         >
           <div className="project-split grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">

@@ -3,7 +3,7 @@
 import React from "react";
 
 export function SeekingMarquee() {
-  const sentence = "Currently seeking AutoCDA";
+  const sentence = "Currently Exploring Seed Funding for AutoCDA.";
   const instances = Array(12).fill(sentence);
 
   return (

@@ -63,10 +63,17 @@ const FooterContact = () => {
               ))}
             </nav>
 
-            <button className="bg-white text-black px-12 py-6 text-[0.8rem] font-black uppercase tracking-[0.2em] hover:bg-[#808080] hover:text-white transition-all duration-300 group">
+            <a 
+              href="https://form.typeform.com/to/Z9NeSfhP"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="Btn"
+            >
               START A CONVERSATION 
-              <span className="ml-4 inline-block transition-transform duration-300 group-hover:translate-x-2">→</span>
-            </button>
+              <svg className="svgIcon" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
 
               <div className="text-[0.65rem] text-[#808080] uppercase tracking-widest font-medium">
                 © {new Date().getFullYear()} LOCHAN P S ALL RIGHTS RESERVED.
@@ -74,6 +81,59 @@ const FooterContact = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .Btn {
+          width: 400px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(15, 15, 15);
+          border: none;
+          color: white;
+          font-weight: 600;
+          font-size: 1rem;
+          letter-spacing: 0.1em;
+          gap: 12px;
+          cursor: pointer;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+          position: relative;
+          overflow: hidden;
+          transition-duration: .3s;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+
+        .svgIcon {
+          width: 20px;
+          height: 20px;
+        }
+
+        .Btn::before {
+          width: 400px;
+          height: 400px;
+          position: absolute;
+          content: "";
+          background-color: white;
+          border-radius: 50%;
+          left: -100%;
+          top: 0;
+          transition-duration: .3s;
+          mix-blend-mode: difference;
+        }
+
+        .Btn:hover::before {
+          transition-duration: .3s;
+          transform: translate(100%, -50%);
+          border-radius: 0;
+        }
+
+        .Btn:active {
+          transform: translate(5px, 5px);
+          transition-duration: .3s;
+        }
+      `}</style>
     </footer>
   );
 };

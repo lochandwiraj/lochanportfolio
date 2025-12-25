@@ -14,7 +14,10 @@ const NarrativeIntro: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-8">
             <h1 className="text-[8vw] md:text-[6vw] font-[900] leading-[0.9] tracking-[-0.02em] uppercase">
-              PRODUCT THINKER STARTUP BUILDER
+              <div className="block">PRODUCT</div>
+              <div className="block translate-x-[2vw]">THINKER</div>
+              <div className="block translate-x-[8vw]">STARTUP</div>
+              <div className="block translate-x-[8vw]">BUILDER</div>
             </h1>
           </div>
           
