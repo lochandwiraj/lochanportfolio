@@ -17,6 +17,57 @@ interface ProjectProps {
 
 const projects: ProjectProps[] = [
   {
+    id: "subscrybe",
+    title: "Subscrybe - Blockchain Payments",
+    subtitle: "Privacy-first subscription management on Cardano with automated smart contracts and transparent revenue tracking.",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.32.16-PM-1766655579382.jpeg",
+    description: "Subscrybe - Web3 Payments Platform",
+    details: [
+      "Finalist - Cardano Blockchain Hackathon",
+      "The Problem: Subscription businesses lose 9% revenue to payment failures and lack transparent analytics.",
+      "The Solution: Cardano-based subscription vaults with automated payment routing, 2.5% PSP commission model, and real-time merchant analytics.",
+      "Market: $650B global subscription economy.",
+      "Status: Hackathon finalist, exploring pilot partnerships.",
+      "Tech: Cardano L1, Plutus Smart Contracts, Next.js 14"
+    ],
+    tags: ["BLOCKCHAIN", "FINTECH", "WEB3", "DEFI"],
+    link: "https://github.com/potatorangersfr-netizen/Subscrybe",
+    index: 1
+  },
+  {
+    id: "bb84",
+    title: "BB84 - Quantum Network Simulator",
+    subtitle: "Quantum key distribution protocol that detects eavesdroppers through the laws of physics—not just encryption algorithms.",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.41.55-PM-1766655590497.jpeg",
+    description: "BB84 Quantum Network Simulator",
+    details: [
+      "Winner - IISc × IBM Qiskit Fall Fest 2024",
+      "Built complete web implementation of BB84 protocol with 5 attack scenarios, statistical eavesdropping detection (QBER threshold: 11%), and real-time network visualizations.",
+      "The Value: As quantum computers threaten traditional encryption, quantum cryptography offers provable security.",
+      "Recognition: IBM Qiskit Advocate (ID: 116901)",
+      "Tech: IBM Qiskit, Flask REST API, React, NumPy"
+    ],
+    tags: ["QUANTUM COMPUTING", "SECURITY", "RESEARCH"],
+    link: "https://github.com/LochanPS/bb84_quantum_network",
+    index: 2
+  },
+  {
+    id: "limbo",
+    title: "LIMBO - Emotional Companion",
+    subtitle: "AI companion with circadian rhythms that processes memories during sleep cycles—exploring human-AI emotional interfaces.",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.53.30-PM-1766655988401.jpeg",
+    description: "LIMBO - Emotional AI Research",
+    details: [
+      "Built AI system with 4 states: awake → drowsy → dreaming → waking. Processes conversations during sleep cycles, evolves personality based on interactions, and visualizes memory networks in 3D.",
+      "Features real-time emotion detection (7 states), therapeutic audio system, and bounded personality evolution (±0.15 parameter shifts).",
+      "Built for: Understanding human-AI emotional dynamics.",
+      "Tech: React, TypeScript, LangGraph, OpenRouter API, Three.js, Framer Motion"
+    ],
+    tags: ["AI RESEARCH", "3D", "EMOTIONAL AI"],
+    link: "https://github.com/lochandwiraj/ai-dreams-emotional-companion",
+    index: 3
+  },
+  {
     id: "autocda",
     title: "AutoCDA - AI Circuit Designer",
     subtitle: "Designing circuits takes hours. AutoCDA does it in 5 seconds using AI.",
@@ -33,7 +84,7 @@ const projects: ProjectProps[] = [
     ],
     tags: ["AI AUTOMATION", "HARDWARE", "SAAS"],
     link: "https://github.com/lochandwiraj/AutoCDA",
-    index: 1
+    index: 4
   },
   {
     id: "mithril",
@@ -52,7 +103,7 @@ const projects: ProjectProps[] = [
     ],
     tags: ["SAAS", "COMMERCE", "WHATSAPP"],
     link: "#",
-    index: 2
+    index: 5
   },
   {
     id: "argus",
@@ -71,42 +122,7 @@ const projects: ProjectProps[] = [
     ],
     tags: ["AI", "GOVTECH", "SMART CITIES", "SAAS"],
     link: "https://github.com/dwiraj6/UrbanvisionAI",
-    index: 3
-  },
-  {
-    id: "subscrybe",
-    title: "Subscrybe - Blockchain Payments",
-    subtitle: "Privacy-first subscription management on Cardano with automated smart contracts and transparent revenue tracking.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.32.16-PM-1766655579382.jpeg",
-    description: "Subscrybe - Web3 Payments Platform",
-    details: [
-      "Finalist - Cardano Blockchain Hackathon",
-      "The Problem: Subscription businesses lose 9% revenue to payment failures and lack transparent analytics.",
-      "The Solution: Cardano-based subscription vaults with automated payment routing, 2.5% PSP commission model, and real-time merchant analytics.",
-      "Market: $650B global subscription economy.",
-      "Status: Hackathon finalist, exploring pilot partnerships.",
-      "Tech: Cardano L1, Plutus Smart Contracts, Next.js 14"
-    ],
-    tags: ["BLOCKCHAIN", "FINTECH", "WEB3", "DEFI"],
-    link: "https://github.com/potatorangersfr-netizen/Subscrybe",
-    index: 4
-  },
-  {
-    id: "bb84",
-    title: "BB84 Quantum Network",
-    subtitle: "Quantum key distribution protocol that detects eavesdroppers through the laws of physics—not just encryption algorithms.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.41.55-PM-1766655590497.jpeg",
-    description: "BB84 Quantum Network Simulator",
-    details: [
-      "Winner - IISc × IBM Qiskit Fall Fest 2024",
-      "Built complete web implementation of BB84 protocol with 5 attack scenarios, statistical eavesdropping detection (QBER threshold: 11%), and real-time network visualizations.",
-      "The Value: As quantum computers threaten traditional encryption, quantum cryptography offers provable security.",
-      "Recognition: IBM Qiskit Advocate (ID: 116901)",
-      "Tech: IBM Qiskit, Flask REST API, React, NumPy"
-    ],
-    tags: ["QUANTUM COMPUTING", "SECURITY", "RESEARCH"],
-    link: "https://github.com/LochanPS/bb84_quantum_network",
-    index: 5
+    index: 6
   },
   {
     id: "themis",
@@ -125,22 +141,6 @@ const projects: ProjectProps[] = [
     ],
     tags: ["FINTECH", "AI/ML", "ENTERPRISE"],
     link: "#",
-    index: 6
-  },
-  {
-    id: "limbo",
-    title: "LIMBO - Emotional Companion",
-    subtitle: "AI companion with circadian rhythms that processes memories during sleep cycles—exploring human-AI emotional interfaces.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.53.30-PM-1766655988401.jpeg",
-    description: "LIMBO - Emotional AI Research",
-    details: [
-      "Built AI system with 4 states: awake → drowsy → dreaming → waking. Processes conversations during sleep cycles, evolves personality based on interactions, and visualizes memory networks in 3D.",
-      "Features real-time emotion detection (7 states), therapeutic audio system, and bounded personality evolution (±0.15 parameter shifts).",
-      "Built for: Understanding human-AI emotional dynamics.",
-      "Tech: React, TypeScript, LangGraph, OpenRouter API, Three.js, Framer Motion"
-    ],
-    tags: ["AI RESEARCH", "3D", "EMOTIONAL AI"],
-    link: "https://github.com/lochandwiraj/ai-dreams-emotional-companion",
     index: 7
   },
   {

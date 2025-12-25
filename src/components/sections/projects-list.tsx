@@ -3,13 +3,13 @@
 import React from 'react';
 
 const projects = [
+  { name: "Subscrybe - Blockchain Payments", year: "2024" },
+  { name: "BB84 - Quantum Network Simulator", year: "2024" },
+  { name: "LIMBO - Emotional Companion", year: "2024" },
   { name: "AutoCDA - AI Circuit Designer", year: "2025" },
   { name: "MITHRIL - WhatsApp Commerce", year: "2025" },
   { name: "ARGUS - Smart City Platform", year: "2025" },
-  { name: "Subscrybe - Blockchain Payments", year: "2024" },
-  { name: "BB84 Quantum Network Simulator", year: "2024" },
   { name: "THEMIS - Banking Fraud Prevention", year: "2025" },
-  { name: "LIMBO - Emotional Companion", year: "2024" },
   { name: "MORIA - Quantum ML for Finance", year: "2025" },
 ];
 
