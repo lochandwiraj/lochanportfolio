@@ -3,7 +3,6 @@
 import React from "react";
 import Navbar from "@/components/sections/navbar";
 import HeroSection from "@/components/sections/hero";
-import SeedFundingMarquee from "@/components/sections/seed-funding-marquee";
 import ProjectsList from "@/components/sections/projects-list";
 import NarrativeIntro from "@/components/sections/narrative-intro";
 import CapabilitiesSection from "@/components/sections/capabilities";
@@ -19,7 +18,6 @@ export default function Home() {
       
       <main>
         <HeroSection />
-        <SeedFundingMarquee />
         <ProjectsList />
         <NarrativeIntro />
         <CapabilitiesSection />

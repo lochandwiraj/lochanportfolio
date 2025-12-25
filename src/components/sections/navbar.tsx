@@ -12,17 +12,8 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Currently Exploring Banner */}
-      <div className="fixed top-0 left-0 w-full z-[1100] bg-white text-black py-2 overflow-hidden border-b border-black">
-        <div className="flex animate-[marquee_20s_linear_infinite] whitespace-nowrap px-4">
-            <span className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.2em]">
-              Currently exploring seed funding for AutoCDA &nbsp; • &nbsp; Currently exploring seed funding for AutoCDA &nbsp; • &nbsp; Currently exploring seed funding for AutoCDA &nbsp; • &nbsp;
-            </span>
-        </div>
-      </div>
-
       <header 
-        className="fixed top-[32px] md:top-[40px] left-0 w-full h-[80px] z-[1000] flex items-center justify-between border-b border-[#333333] bg-black/80 backdrop-blur-nav px-[4vw]"
+        className="fixed top-0 left-0 w-full h-[80px] z-[1000] flex items-center justify-between border-b border-[#333333] bg-black/80 backdrop-blur-nav px-[4vw]"
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.8)",
         }}

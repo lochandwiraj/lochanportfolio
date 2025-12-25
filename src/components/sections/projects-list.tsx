@@ -21,14 +21,14 @@ const ProjectsList: React.FC = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="group flex justify-between items-baseline border-b border-[#333333] py-8 hover:border-white transition-colors duration-300 cursor-pointer"
+              className="group flex justify-between items-baseline border-b border-[#333333] py-8 hover:border-white hover:bg-white transition-all duration-300 cursor-pointer"
             >
               <div className="flex items-baseline gap-4 group-hover:translate-x-4 transition-transform duration-500">
-                <h3 className="text-[4vw] md:text-[3vw] font-black uppercase tracking-tighter">
+                <h3 className="text-[4vw] md:text-[3vw] font-black uppercase tracking-tighter text-white group-hover:text-black transition-colors duration-300">
                   {project.name}
                 </h3>
               </div>
-              <span className="text-[1.5vw] md:text-[1vw] font-medium text-[#808080] group-hover:text-white transition-colors">
+              <span className="text-[1.5vw] md:text-[1vw] font-medium text-[#808080] group-hover:text-black transition-colors duration-300">
                 {project.year}
               </span>
             </div>
