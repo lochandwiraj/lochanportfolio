@@ -31,7 +31,7 @@ const projects: ProjectProps[] = [
       "Seeking: Seed funding, design tool partnerships.",
       "Tech: Claude 3.5 Sonnet, SKiDL, KiCad API, React"
     ],
-    tags: ["AI AUTOMATION", "HARDWARE", "SAAS", "SEED STAGE"],
+    tags: ["AI AUTOMATION", "HARDWARE", "SAAS"],
     link: "https://github.com/lochandwiraj/AutoCDA",
     index: 1
   },
@@ -50,7 +50,7 @@ const projects: ProjectProps[] = [
       "Seeking: Pre-seed funding, WhatsApp Business API partnerships.",
       "Tech: WhatsApp Business API, Webhook Automation, Payment Gateway Integration, Simple UI Builder"
     ],
-    tags: ["SAAS", "COMMERCE", "WHATSAPP", "PRE-SEED"],
+    tags: ["SAAS", "COMMERCE", "WHATSAPP"],
     link: "#",
     index: 2
   },
@@ -69,7 +69,7 @@ const projects: ProjectProps[] = [
       "Seeking: Pre-seed funding, smart city partnerships.",
       "Tech: React, OpenStreetMap, Geospatial AI, Leaflet"
     ],
-    tags: ["AI", "GOVTECH", "SMART CITIES", "SAAS", "PRE-SEED"],
+    tags: ["AI", "GOVTECH", "SMART CITIES", "SAAS"],
     link: "https://github.com/dwiraj6/UrbanvisionAI",
     index: 3
   },
@@ -112,7 +112,7 @@ const projects: ProjectProps[] = [
     id: "themis",
     title: "THEMIS - Multimodal Banking Fraud Prevention",
     subtitle: "Banks lose $32B annually to fraud. THEMIS catches it before it happens—across every touchpoint.",
-      image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1766656855510.png",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1766656855510.png",
     description: "THEMIS - AI Fraud Prevention",
     details: [
       "The Problem: Traditional fraud detection has 70% false positive rates and misses sophisticated multi-channel attacks.",
@@ -123,7 +123,7 @@ const projects: ProjectProps[] = [
       "Seeking: Seed funding, banking partnerships, fraud experts.",
       "Tech: PyTorch, TensorFlow, Multi-modal Transformers, Real-time ML Pipelines"
     ],
-    tags: ["FINTECH", "AI/ML", "ENTERPRISE", "SEED STAGE"],
+    tags: ["FINTECH", "AI/ML", "ENTERPRISE"],
     link: "#",
     index: 6
   },
@@ -139,7 +139,7 @@ const projects: ProjectProps[] = [
       "Built for: Understanding human-AI emotional dynamics.",
       "Tech: React, TypeScript, LangGraph, OpenRouter API, Three.js, Framer Motion"
     ],
-    tags: ["AI RESEARCH", "EXPERIMENTAL", "3D", "EMOTIONAL AI"],
+    tags: ["AI RESEARCH", "3D", "EMOTIONAL AI"],
     link: "https://github.com/lochandwiraj/ai-dreams-emotional-companion",
     index: 7
   },

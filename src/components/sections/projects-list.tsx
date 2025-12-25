@@ -3,12 +3,12 @@
 import React from 'react';
 
 const projects = [
-  { name: "AutoCDA - AI Circuit Designer", year: "2025", badge: "VENTURE" },
-  { name: "MITHRIL - WhatsApp Commerce", year: "2025", badge: "VENTURE" },
-  { name: "ARGUS - Smart City Platform", year: "2025", badge: "VENTURE" },
+  { name: "AutoCDA - AI Circuit Designer", year: "2025" },
+  { name: "MITHRIL - WhatsApp Commerce", year: "2025" },
+  { name: "ARGUS - Smart City Platform", year: "2025" },
   { name: "Subscrybe - Blockchain Payments", year: "2024" },
   { name: "BB84 Quantum Network Simulator", year: "2024" },
-  { name: "THEMIS - Banking Fraud Prevention", year: "2025", badge: "CONCEPT" },
+  { name: "THEMIS - Banking Fraud Prevention", year: "2025" },
   { name: "LIMBO - Emotional Companion", year: "2024" },
   { name: "MORIA - Quantum ML for Finance", year: "2025" },
 ];
@@ -27,11 +27,6 @@ const ProjectsList: React.FC = () => {
                 <h3 className="text-[4vw] md:text-[3vw] font-black uppercase tracking-tighter">
                   {project.name}
                 </h3>
-                {project.badge && (
-                  <span className="text-[1.2vw] md:text-[0.8vw] font-bold text-white bg-[#333333] px-2 py-1">
-                    {project.badge}
-                  </span>
-                )}
               </div>
               <span className="text-[1.5vw] md:text-[1vw] font-medium text-[#808080] group-hover:text-white transition-colors">
                 {project.year}

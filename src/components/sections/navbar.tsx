@@ -4,12 +4,11 @@ import React from "react";
 import Image from "next/image";
 
 const Navbar = () => {
-  const navLinks = [
-    { label: "PROJECTS", href: "#projects" },
-    { label: "ABOUT", href: "#about" },
-    { label: "VENTURES", href: "#ventures" },
-    { label: "CONTACT", href: "#contact" },
-  ];
+    const navLinks = [
+      { label: "PROJECTS", href: "#projects" },
+      { label: "ABOUT", href: "#about" },
+      { label: "CONTACT", href: "#contact" },
+    ];
 
   return (
     <>

@@ -37,7 +37,7 @@ export default function CapabilitiesSection() {
   ];
 
   return (
-    <section id="ventures" className="relative w-full bg-[#000000] text-[#FFFFFF] py-[15vh] px-[4vw]">
+    <section id="about" className="relative w-full bg-[#000000] text-[#FFFFFF] py-[15vh] px-[4vw]">
       <div className="w-full max-w-full">
         <h2 className="text-[10vw] font-black leading-[0.85] tracking-[-0.04em] uppercase mb-20">
           WHAT<br />I DO
@@ -52,7 +52,7 @@ export default function CapabilitiesSection() {
                   I identify market gaps, design optimal solutions, and ship products that solve real problems.
                 </p>
                 <p className="mt-8 text-[1.25rem] md:text-[1.5rem] font-medium leading-[1.3] tracking-tight text-[#808080]">
-                  Currently exploring funding opportunities for ventures in AI automation, fraud prevention, and geospatial intelligence.
+                  Currently exploring funding opportunities for projects in AI automation, fraud prevention, and geospatial intelligence.
                 </p>
               </div>
 
@@ -61,7 +61,7 @@ export default function CapabilitiesSection() {
                   I&apos;ve won hackathons (IISc × IBM Qiskit Fall Fest), reached finals in blockchain competitions (Cardano), qualified for national innovation challenges (Smart India Hackathon Round 2), and earned recognition as an IBM Qiskit Advocate.
                 </p>
                   <div className="mt-8 flex flex-col gap-4">
-                    <p className="text-[1.1rem] font-bold uppercase tracking-widest text-[#808080]">Currently working on three ventures:</p>
+                    <p className="text-[1.1rem] font-bold uppercase tracking-widest text-[#808080]">Currently working on three projects:</p>
                     <ul className="flex flex-col gap-2 text-[1.1rem]">
                       <li>- AutoCDA - Making circuit design 10x faster with AI</li>
                       <li>- MITHRIL - WhatsApp automation for commercial businesses</li>

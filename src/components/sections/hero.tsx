@@ -24,7 +24,7 @@ export default function HeroSection() {
               >
                 A problem-solver who builds products with real impact—{"\n"}
                 from AI-powered tools to fraud prevention systems to{"\n"}
-                blockchain infrastructure. Currently raising for ventures{"\n"}
+                blockchain infrastructure. Currently raising for projects{"\n"}
                 that matter.
               </p>
             </div>
