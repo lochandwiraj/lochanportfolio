@@ -60,17 +60,18 @@ export default function CapabilitiesSection() {
                 <p className="text-[1.1rem] leading-[1.6] text-[#FFFFFF]">
                   I&apos;ve won hackathons (IISc × IBM Qiskit Fall Fest), reached finals in blockchain competitions (Cardano), qualified for national innovation challenges (Smart India Hackathon Round 2), and earned recognition as an IBM Qiskit Advocate.
                 </p>
-                <div className="mt-8 flex flex-col gap-4">
-                  <p className="text-[1.1rem] font-bold uppercase tracking-widest text-[#808080]">Currently working on three ventures:</p>
-                  <ul className="flex flex-col gap-2 text-[1.1rem]">
-                    <li>• AutoCDA - Making circuit design 10x faster with AI</li>
-                    <li>• UrbanVisionAI - Intelligence platform for smart cities</li>
-                    <li>• Fraud Shield - Banking fraud prevention at scale</li>
-                  </ul>
-                </div>
-                <p className="mt-8 text-[1.1rem] font-medium italic text-white">
-                  Looking for: Co-founders, advisors, and early investors who understand the value of solving hard problems.
-                </p>
+                  <div className="mt-8 flex flex-col gap-4">
+                    <p className="text-[1.1rem] font-bold uppercase tracking-widest text-[#808080]">Currently working on three ventures:</p>
+                    <ul className="flex flex-col gap-2 text-[1.1rem]">
+                      <li>- AutoCDA - Making circuit design 10x faster with AI</li>
+                      <li>- MITHRIL - WhatsApp automation for commercial businesses</li>
+                      <li>- ARGUS - Intelligence platform for smart cities</li>
+                    </ul>
+                  </div>
+                  <p className="mt-8 text-[1.1rem] font-medium italic text-white">
+                    Looking for: Advisors and early investors who understand the value of solving hard problems.
+                  </p>
+
               </div>
             </div>
           </div>

@@ -18,11 +18,12 @@ const PhilosophyTech: React.FC = () => {
   return (
     <section className="bg-white py-[20vh] px-[4vw] overflow-hidden">
       <div className="container mx-auto max-w-full">
-        <div className="mb-20">
-          <h2 className="text-[3vw] md:text-[2.5vw] font-medium leading-[1.2] text-black max-w-[1000px] italic">
-            &quot;I build products that solve real problems at scale— from helping engineers design circuits in seconds, to preventing fraud before it costs millions, to making urban planning data-driven and intelligent.&quot;
-          </h2>
-        </div>
+          <div className="mb-20">
+            <h2 className="text-[3vw] md:text-[2.5vw] font-medium leading-[1.2] text-black max-w-[1000px]">
+              I build products that solve real problems at scale— from helping engineers design circuits in seconds, to preventing fraud before it costs millions, to making urban planning data-driven and intelligent.
+            </h2>
+          </div>
+
 
         {/* Tech Carousel */}
         <div className="relative flex overflow-hidden border-t border-b border-black py-16">

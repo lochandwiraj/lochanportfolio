@@ -20,7 +20,7 @@ const projects: ProjectProps[] = [
     id: "autocda",
     title: "AutoCDA - AI Circuit Designer",
     subtitle: "Designing circuits takes hours. AutoCDA does it in 5 seconds using AI.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2070",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.21.11-PM-1766655554236.jpeg?width=8000&height=8000&resize=contain",
     description: "AutoCDA - AI Circuit Design Automation",
     details: [
       "Say 'Design a 1kHz low-pass filter' → Get a complete KiCad schematic with calculated component values, detailed explanations, and production-ready files.",
@@ -39,7 +39,7 @@ const projects: ProjectProps[] = [
     id: "subscrybe",
     title: "Subscrybe - Blockchain Payments",
     subtitle: "Privacy-first subscription management on Cardano with automated smart contracts and transparent revenue tracking.",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=2064",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.32.16-PM-1766655579382.jpeg?width=8000&height=8000&resize=contain",
     description: "Subscrybe - Web3 Payments Platform",
     details: [
       "Finalist - Cardano Blockchain Hackathon",
@@ -57,7 +57,7 @@ const projects: ProjectProps[] = [
     id: "bb84",
     title: "BB84 Quantum Network",
     subtitle: "Quantum key distribution protocol that detects eavesdroppers through the laws of physics—not just encryption algorithms.",
-    image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=2070",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.41.55-PM-1766655590497.jpeg?width=8000&height=8000&resize=contain",
     description: "BB84 Quantum Network Simulator",
     details: [
       "Winner - IISc × IBM Qiskit Fall Fest 2024",
@@ -71,11 +71,11 @@ const projects: ProjectProps[] = [
     index: 3
   },
   {
-    id: "urbanvisionai",
-    title: "UrbanVisionAI - Smart City Platform",
+    id: "argus",
+    title: "ARGUS - Smart City Platform",
     subtitle: "AI-powered geospatial intelligence that tells city planners exactly where infrastructure is needed—backed by real data.",
-    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=2070",
-    description: "UrbanVisionAI - Urban Planning Intelligence",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.49.50-PM-1766655608129.jpeg?width=8000&height=8000&resize=contain",
+    description: "ARGUS - Urban Planning Intelligence",
     details: [
       "The Problem: Cities waste billions building infrastructure in the wrong locations due to poor data analysis.",
       "The Solution: Process millions of geospatial data points (hospitals, schools, parks, lakes) to identify underserved areas and recommend optimal locations for new facilities.",
@@ -90,11 +90,30 @@ const projects: ProjectProps[] = [
     index: 4
   },
   {
-    id: "fraudshield",
-    title: "Multimodal Banking Fraud Prevention",
-    subtitle: "Banks lose $32B annually to fraud. This system catches it before it happens—across every touchpoint.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=2070",
-    description: "Fraud Shield - AI Fraud Prevention",
+    id: "mithril",
+    title: "MITHRIL - WhatsApp Business Automation",
+    subtitle: "Businesses lose customers to complicated ordering. MITHRIL makes it simple—no chatbots, just buttons that work.",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.26.38-PM-1766655571411.jpeg?width=8000&height=8000&resize=contain",
+    description: "MITHRIL - WhatsApp Commerce Platform",
+    details: [
+      "The Problem: Small businesses struggle with expensive, unreliable AI chatbots that confuse customers. They need simple automation that just works.",
+      "The Solution: WhatsApp-native platform using button-driven workflows for bookings, orders, payments, and loyalty. Reliable, low-cost, easy to deploy. AI optional, not required.",
+      "Use Cases: Restaurants (menu ordering), salons (appointment booking), retail (product catalog + payments), services (booking + reminders).",
+      "Market: 200M+ businesses use WhatsApp globally, $3.2B conversational commerce market.",
+      "Status: MVP development, validating with local businesses.",
+      "Seeking: Pre-seed funding, WhatsApp Business API partnerships.",
+      "Tech: WhatsApp Business API, Webhook Automation, Payment Gateway Integration, Simple UI Builder"
+    ],
+    tags: ["SAAS", "COMMERCE", "WHATSAPP", "PRE-SEED"],
+    link: "#",
+    index: 5
+  },
+  {
+    id: "themis",
+    title: "THEMIS - Multimodal Banking Fraud Prevention",
+    subtitle: "Banks lose $32B annually to fraud. THEMIS catches it before it happens—across every touchpoint.",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.53.30-PM-1766655624872.jpeg?width=8000&height=8000&resize=contain",
+    description: "THEMIS - AI Fraud Prevention",
     details: [
       "The Problem: Traditional fraud detection has 70% false positive rates and misses sophisticated multi-channel attacks.",
       "The Solution: Multimodal AI analyzing transactions, biometrics, behavior patterns, documents, and device fingerprints simultaneously across payments, loans, KYC, and account activities.",
@@ -106,14 +125,14 @@ const projects: ProjectProps[] = [
     ],
     tags: ["FINTECH", "AI/ML", "ENTERPRISE", "SEED STAGE"],
     link: "#",
-    index: 5
+    index: 6
   },
   {
-    id: "aidreams",
-    title: "AI Dreams - Emotional Companion",
+    id: "limbo",
+    title: "LIMBO - Emotional Companion",
     subtitle: "AI companion with circadian rhythms that processes memories during sleep cycles—exploring human-AI emotional interfaces.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2070",
-    description: "AI Dreams - Emotional AI Research",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.53.30-PM-1766655988401.jpeg?width=8000&height=8000&resize=contain",
+    description: "LIMBO - Emotional AI Research",
     details: [
       "Built AI system with 4 states: awake → drowsy → dreaming → waking. Processes conversations during sleep cycles, evolves personality based on interactions, and visualizes memory networks in 3D.",
       "Features real-time emotion detection (7 states), therapeutic audio system, and bounded personality evolution (±0.15 parameter shifts).",
@@ -122,14 +141,14 @@ const projects: ProjectProps[] = [
     ],
     tags: ["AI RESEARCH", "EXPERIMENTAL", "3D", "EMOTIONAL AI"],
     link: "https://github.com/lochandwiraj/ai-dreams-emotional-companion",
-    index: 6
+    index: 7
   },
   {
-    id: "quantumml",
-    title: "Quantum ML for Finance",
+    id: "moria",
+    title: "MORIA - Quantum ML for Finance",
     subtitle: "Exploring quantum algorithms for portfolio optimization—where quantum advantage might actually matter.",
-    image: "https://images.unsplash.com/photo-1611974714658-66d2df974fd8?auto=format&fit=crop&q=80&w=2070",
-    description: "Quantum ML for Finance",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-2.52.35-PM-1766655617250.jpeg?width=8000&height=8000&resize=contain",
+    description: "MORIA - Quantum ML for Finance",
     details: [
       "Active research project testing quantum algorithms (QAOA, VQE) against classical baselines for portfolio optimization and financial feature extraction.",
       "Building hybrid quantum-classical pipelines and benchmarking real-world performance on stock data.",
@@ -138,7 +157,7 @@ const projects: ProjectProps[] = [
     ],
     tags: ["QUANTUM", "FINANCE", "RESEARCH", "ML"],
     link: "https://github.com/LochanPS/Quantum-Computing-for-Finance---Learning-Journey",
-    index: 7
+    index: 8
   }
 ];
 
@@ -148,12 +167,12 @@ const ProjectShowcase: React.FC = () => {
       {projects.map((project, idx) => (
         <div 
           key={project.id} 
-          className="min-h-screen flex flex-col justify-center border-t border-[#333333] py-24 px-[4vw]"
+          className="project-section min-h-[80vh] flex flex-col justify-center border-t border-[#333333] py-24 px-[4vw]"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          <div className="project-split grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             {/* Left Side - Image */}
             <div className="lg:col-span-7">
-              <div className="relative aspect-video overflow-hidden group">
+              <div className="project-image relative aspect-video overflow-hidden group">
                 <Image 
                   src={project.image} 
                   alt={project.title}

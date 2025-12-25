@@ -13,17 +13,16 @@ const NarrativeIntro: React.FC = () => {
       <div className="container max-w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-8">
-            <h2 
-              className="font-black leading-[0.85] tracking-[-0.04em] uppercase"
-              style={{
-                fontSize: 'clamp(3rem, 10vw, 8rem)',
-              }}
-            >
-              <div className="block">PRODUCT</div>
-              <div className="block translate-x-[8vw]">THINKER</div>
-              <div className="block">STARTUP</div>
-              <div className="block translate-x-[8vw]">BUILDER</div>
-            </h2>
+              <h2 
+                className="font-black leading-[0.85] tracking-[-0.04em] uppercase"
+                style={{
+                  fontSize: 'clamp(3rem, 10vw, 8rem)',
+                }}
+              >
+                <div className="block">PRODUCT THINKER</div>
+                <div className="block translate-x-[8vw]">STARTUP BUILDER</div>
+              </h2>
+
           </div>
           
           <div className="md:col-span-4 self-end pb-[2vw]">

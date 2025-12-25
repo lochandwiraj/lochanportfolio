@@ -182,6 +182,36 @@
     cursor: pointer;
     border-radius: 0;
   }
+
+  /* PORTFOLIO GAP FIXES */
+  .project-section,
+  [class*="project"] {
+    margin-bottom: 60px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .project-image {
+    margin-bottom: 20px !important;
+  }
+
+  .project-split,
+  .split-layout,
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px !important;
+    align-items: start !important;
+    margin-bottom: 60px !important;
+  }
+
+  [class*="section"] {
+    padding-bottom: 40px !important;
+  }
+
+  .project-wrapper {
+    gap: 40px !important;
+    margin-bottom: 60px !important;
+  }
 }
 
 @layer base {
