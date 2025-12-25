@@ -4,9 +4,7 @@ import React from "react";
 import Navbar from "@/components/sections/navbar";
 import HeroSection from "@/components/sections/hero";
 import ProjectsList from "@/components/sections/projects-list";
-import SeedFundingMarquee from "@/components/sections/seed-funding-marquee";
 import NarrativeIntro from "@/components/sections/narrative-intro";
-import ClientsRecognitionSection from "@/components/sections/clients-recognition";
 import CapabilitiesSection from "@/components/sections/capabilities";
 import PhilosophyTech from "@/components/sections/philosophy-tech";
 import ProjectShowcase from "@/components/sections/project-showcase";
@@ -20,11 +18,9 @@ export default function Home() {
       
       <main>
         <HeroSection />
-        <ProjectsList />
-        <SeedFundingMarquee />
-        <NarrativeIntro />
-        <ClientsRecognitionSection />
-        <CapabilitiesSection />
+          <ProjectsList />
+          <NarrativeIntro />
+          <CapabilitiesSection />
         <PhilosophyTech />
         <ProjectShowcase />
       </main>
